@@ -15,6 +15,35 @@ header{
 	width: 100%;
 	position: relative;
 }
+.boton{
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	transition-duration: .3s;
+}
+.boton__toggle,
+.boton__toggle:before,
+.boton__toggle:after{
+	content: '';
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #000;
+	transition-duration: .3s;
+}
+.boton__toggle:before{
+	transform: translateY(-6px);
+}
+.boton__toggle:after{
+	transform: translateY(3px);
+}
+.boton:hover .boton__toggle{
+	width: 15px;
+}
 .menu{
 	background: #000;
 	position: absolute;
@@ -42,7 +71,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition-duration: .3s;
+	transition-duration: .2s;
 }
 .menu__a:hover{
 	font-size: 1.1em;
